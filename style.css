@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:ital,wght@0,300;1,500&family=Red+Hat+Display:wght@500;700;900&family=Roboto:ital,wght@0,300;1,400&display=swap');
+
+
+:root{
+    --body-color: #E9DAC1;
+    --body-font: "Montserrat",sans-serif;
+    --italic-font: 'EB Garamond',serif;
+    --glacier-bg:"#54BAB9";
+    --purple-bg:#2A0944;
+    --roboto-font:'roboto', 'serif';
+
+}
+
+*{
+    box-sizing: border-box;
+    outline:none;
+}
+
+body{
+   font-family: var(--body-font);
+    background-color: var(--body-color);
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color:; 
+    font-weight: 1000;
+    flex-shrink: 0;
+    border-bottom: 1px solid rgba(44, 10, 20, 0.5);
+    position: fixed;
+    margin-top: 1.5em;
+    box-shadow:50em ;
+    height:50px;
+    z-index: 6;
+    
+}
+
+.sub-header{
+    display: flex;
+    flex-direction: row;
+    background-color: ;
+    
+}
+
+nav{
+    display: flex;
+   background-color: ;
+   margin-left: 38rem;
+
+    
+
+}
+
+.navdiv{
+    display: flex;
+    background-color: ;
+    margin-left: em;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: var(--italic-font);
+    font-size: 1.5rem;
+    margin-left: ;
+}
+
+
+.svg{
+    display: flex;
+    flex-direction: row;
+    background-color:;
+    width: ;
+    color: var(--purple-bg);
+    text-justify: 3em;
+    margin-left: 25em;
+    
+    
+}
+
+.links{
+    margin-left: 1em;
+}
+
+.container{
+    display: flex;
+    flex-direction: ;
+    background-color: ;
+    
+}
+
+.flex-1{
+    margin-left: 5em;
+    margin-top: 6em;
+    background-color: ;
+}
+
+.closca{
+    margin-top: em;
+    font-weight: bolder;
+    letter-spacing: 0.2em;
+    background-color: ;
+}
+
+.glacier{
+    font-size: 4em ;
+    background-color: ;
+    font-weight: 1000;
+}
+
+.number{
+   font-family: var(--italic-font);
+   font-weight: 400;
+   font-size: 2em;
+   letter-spacing: 5px;
+
+}
+
+.lfg{
+    margin-top: 8rem;
+}
+
+.lfg h2{
+    font-family: cursive;
+    font-weight: 100;
+}
+
+.lfg p{
+  font-size: 1.5em;
+  font-family: var(--body-font);
+  font-family: 900;
+}
+
+
+.flex-2{
+   margin-top: 8em;
+   margin-left: 15em;
+   display: flex;
+}
+
+.img-1{
+    width: 400px;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 700px;
+}
+
+.img-2{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    top: ;
+    left: 0;
+    right:0 ;
+    transform: scale(1.6);
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+.flex-center{
+    position: relative;
+    display: flex;
+    flex-shrink: ;
+}
+
+.flexx{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+}
+
+.flex-3{
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.fle-3 a :hover{
+    transition: 1s all ease-in;
+    background-color: black;
+    color:white
+}
+
+.fle-3{
+     display: flex;
+     flex-direction: row-reverse;
+     margin-top: 70px;
+     gap: 1.5em;
+}
+
+
+
+
+

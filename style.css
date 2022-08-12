@@ -2,7 +2,7 @@
 
 
 :root{
-    --body-color: #E9DAC1;
+    --body-color: hsl(37, 48%, 84%);
     --body-font: "Montserrat",sans-serif;
     --italic-font: 'EB Garamond',serif;
     --glacier-bg:"#54BAB9";
@@ -182,7 +182,6 @@ a{
 .fle-3 a :hover{
     transition: 1s all ease-in;
     background-color: black;
-    color:white
 }
 
 .fle-3{
@@ -190,6 +189,10 @@ a{
      flex-direction: row-reverse;
      margin-top: 70px;
      gap: 1.5em;
+}
+
+button{
+    background-color: transparent;
 }
 
 

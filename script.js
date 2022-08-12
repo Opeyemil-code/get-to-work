@@ -16,12 +16,12 @@ document.querySelector('.img-2).textContent;   */
 
 
 const switchedColors =  [
-    'blanchedalmond','maroon','brown','white','thistle','#40e0d0',
+   '#FBD1A2', '#e9bf67','#40e0d0','#e7dfcf',
 ];
 
 
 const Glacier=[
-    'glacier','savannah','coral','beach'
+    'Glacier','savannah','coral','beach'
 ]
 
 const number=[
@@ -29,15 +29,26 @@ const number=[
 ]
 
 
+const pagesNumber=[
+    '1/4','2/4','3/4','4/4'
+]
+
 const switchText=[
-    `glaciers contain 75% of the world's fresher`,`We will have lost 60% of our reefs by 2030.`,'in 20 years, there could be more plastic in our oceans than fish',`the earth's area affected by desertification is approx 11 times india's size`
+    `glaciers contain 75% of the world's fresher`,`We will have lost 60% of our reefs by 2030.`,'in 20 years, there could be more plastic in our oceans than fish',`the earth's area affected by desertification is approx 11 times india's size`, 
 ]
 
 
-const 
+const switchLargeText=[
+    'The Savannas act as a carbon sink, absorbing CO2 from the atmosphere and helping to maintain the balance of global temperatures.',   'Coral reefs are essential to humans, as they protect the shorelines and are a source nutrients and habitat for thousands of marine species',    'Plastic pollution injures more than 100.000 marine animals every year.It takes around 450 years for one plastic bottle to decompose.', 'Plastic pollution injures more than 100.000 marine animals every year.It takes around 450 years for one plastic bottle to decompose.'
+]
 
-const switchImages=[
-      'https://images.unsplash.com/photo-1613109526778-27605f1f27d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80' , 'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/savanna_OK.png?v=4783820813181844557'
+const switchBackgroundImages=[
+      'https://images.unsplash.com/photo-1613109526778-27605f1f27d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80' , 'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/Beach_1920.jpg?v=1029210661698833530','https://images.unsplash.com/photo-1613109526778-27605f1f27d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80','https://www.discover-the-world.com/app/uploads/2018/05/chile-patagonia-calving-glacier-is-1150x863-c-default.jpg'
+]
+
+
+const switchImage=[
+      'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/bottle_beach.png?v=11784267851598469514','https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/savanna_OK.png?v=4783820813181844557', 'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/Glacier_OK.png?v=7185877315400411030', 'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/Coral_OK.png?v=14596995446202437119',
 ]
 
 
@@ -59,12 +70,38 @@ document.querySelector('.prev').addEventListener(
         document.querySelector('.glacier').textContent = Glacier[switchedButton];
         document.querySelector('.number').textContent = number[switchedButton];
         document.querySelector('.lol').textContent = switchText[switchedButton]
-        document.querySelector('.lo').textContent = switchTexts[2];
-        document.querySelector('.fle-3').textContent = switchTexts[4];
-       // document.querySelector('.svgs').style.backgroundColor= switchedColors[3];
-        document.querySelector('.img-1').textContent = switchImages[0];
+        document.querySelector('.lo').textContent = switchLargeText[switchedButton];
+        document.querySelector('.fle-3').textContent = pagesNumber[switchedButton];
+
+        document.querySelector('.img-1').src = switchBackgroundImages[switchedButton];
+
+        document.querySelector('.img-2').src = switchImage;
+
+
+
+        
     }
 )
+
+
+document.querySelector('.next').addEventListener(
+    'click', function (params) {
+    switchedButton-=1
+    document.querySelector('body').style.backgroundColor = switchedColors[switchedButton]
+    document.querySelector('.glacier').textContent = Glacier[switchedButton];
+    document.querySelector('.number').textContent = number[switchedButton];
+    document.querySelector('.lol').textContent = switchText[switchedButton]
+    document.querySelector('.lo').textContent = switchLargeText[switchedButton];
+    document.querySelector('.fle-3').textContent = pagesNumber[switchedButton];
+    document.querySelector('.img-1').src = switchBackgroundImages[switchedButton];
+
+        document.querySelector('.img-2').src = switchImage;
+    } 
+)
+
+
+
+
 
 
 

@@ -192,7 +192,15 @@ a{
 }
 
 button{
-    background-color: transparent;
+    background-color: white;
+    
+
+}
+
+button :hover{
+    color: black;
+    background-color: black;
+    transition: 2s all ease-in-out;
 }
 
 

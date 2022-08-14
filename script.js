@@ -71,8 +71,44 @@ document.querySelector('.prev').addEventListener(
 
      if (switchedButton <= switchedColors.length) {
         document.querySelector('body').style.backgroundColor = switchedColors[switchedButton];
-     }  
+        
+        switchedButton+=1;
+      
+     }  else if (switchedButton <= Glacier.length) {
+        document.querySelector('.glacier').textContent = Glacier[switchedButton];
+         
+        switchedButton+=1;
+
+     } else if (switchedButton <= number.length) {
+        document.querySelector('.number').textContent = number[switchedButton];
+        switchedButton+=1
+
+     } else if (switchedButton <= pagesNumber.length) {
+        document.querySelector('.fle-3').textContent = pagesNumber[switchedButton];
+        switchedButton+=1;
+
+     } else if (switchedButton <= switchText) {
+        document.querySelector('.lfg').textContent = switchText[switchedButton];
+
+        switchedButton+=1;
+
+     } else if (switchedButton <= switchImage) {
+        document.querySelector('.img-1').textContent = switchImage[switchedButton];
+        switchedButton+=1;
+
+     } else if (switchedButton <= switchBackgroundImages) {
+        document.querySelector('.img-1').textContent = switchBackgroundImages[switchedButton];
+
+        switchedButton+=1;
+      
+     }
+
+
+     
+     
     
+    
+
          
            
            
@@ -93,6 +129,7 @@ document.querySelector('.prev').addEventListener(
            
        }
 ) 
+
 
 
 

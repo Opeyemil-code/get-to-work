@@ -16,7 +16,7 @@ document.querySelector('.img-2).textContent;   */
 
 
 const switchedColors =  [
-   '#FBD1A2', '#e9bf67','#40e0d0','#e7dfcf',
+    '#e9ddca', '#008080','#ff7f50','#a0522d',
 ];
 
 
@@ -43,12 +43,12 @@ const switchLargeText=[
 ]
 
 const switchBackgroundImages=[
-      'https://images.unsplash.com/photo-1613109526778-27605f1f27d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80' , 'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/Beach_1920.jpg?v=1029210661698833530','https://images.unsplash.com/photo-1613109526778-27605f1f27d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80','https://www.discover-the-world.com/app/uploads/2018/05/chile-patagonia-calving-glacier-is-1150x863-c-default.jpg'
+      'https://images.unsplash.com/photo-1560847468-5eef330f455a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODR8fHdhdGVyJTIwYm90dGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60','https://images.unsplash.com/photo-1613109526778-27605f1f27d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80' , 'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/Beach_1920.jpg?v=1029210661698833530','https://images.unsplash.com/photo-1613109526778-27605f1f27d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80','https://www.discover-the-world.com/app/uploads/2018/05/chile-patagonia-calving-glacier-is-1150x863-c-default.jpg'
 ]
 
 
 const switchImage=[
-      'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/bottle_beach.png?v=11784267851598469514','https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/savanna_OK.png?v=4783820813181844557', 'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/Glacier_OK.png?v=7185877315400411030', 'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/Coral_OK.png?v=14596995446202437119',
+     'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/savanna_OK.png?v=4783820813181844557', 'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/bottle_beach.png?v=11784267851598469514', 'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/Glacier_OK.png?v=7185877315400411030', 'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/Coral_OK.png?v=14596995446202437119',
 ]
 
 
@@ -63,39 +63,66 @@ let switchedButton= 0;
 
 
 document.querySelector('.prev').addEventListener(
-    'click', function () {
+    'click', 
+
+    function () {
        
-        switchedButton+=1
-       document.querySelector('body').style.backgroundColor = switchedColors[switchedButton]
-        document.querySelector('.glacier').textContent = Glacier[switchedButton];
-        document.querySelector('.number').textContent = number[switchedButton];
-        document.querySelector('.lol').textContent = switchText[switchedButton]
-        document.querySelector('.lo').textContent = switchLargeText[switchedButton];
-        document.querySelector('.fle-3').textContent = pagesNumber[switchedButton];
-
-        document.querySelector('.img-1').src = switchBackgroundImages[switchedButton];
-
-        document.querySelector('.img-2').src = switchImage;
-
-
-
         
-    }
-)
+
+     if (switchedButton <= switchedColors.length) {
+        document.querySelector('body').style.backgroundColor = switchedColors[switchedButton];
+     }  
+    
+         
+           
+           
+
+    
+          
+           document.querySelector('body').style.backgroundColor = switchedColors[switchedButton]
+           document.querySelector('.glacier').textContent = Glacier[switchedButton];
+           document.querySelector('.number').textContent = number[switchedButton];
+           document.querySelector('.lol').textContent = switchText[switchedButton]
+           document.querySelector('.lo').textContent = switchLargeText[switchedButton];
+           document.querySelector('.fle-3').textContent = pagesNumber[switchedButton];
+    
+           document.querySelector('.img-1').src = switchBackgroundImages[switchedButton];
+    
+           document.querySelector('.img-2').src = switchImage;
+    
+           
+       }
+) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 document.querySelector('.next').addEventListener(
     'click', function (params) {
     switchedButton-=1
-    document.querySelector('body').style.backgroundColor = switchedColors[switchedButton]
+    document.querySelector('body').style.backgroundColor = switchedColors[switchedButton];
     document.querySelector('.glacier').textContent = Glacier[switchedButton];
     document.querySelector('.number').textContent = number[switchedButton];
     document.querySelector('.lol').textContent = switchText[switchedButton]
     document.querySelector('.lo').textContent = switchLargeText[switchedButton];
     document.querySelector('.fle-3').textContent = pagesNumber[switchedButton];
     document.querySelector('.img-1').src = switchBackgroundImages[switchedButton];
-
-        document.querySelector('.img-2').src = switchImage;
+    document.querySelector('.img-2').src = switchImage[switchedButton];
     } 
 )
 
